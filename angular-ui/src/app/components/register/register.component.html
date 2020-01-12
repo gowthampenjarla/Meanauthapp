@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Registration</mat-card-title>
+  </mat-card-header>
+  <!-- <mat-divider></mat-divider> -->
+  <mat-card-content>
+    <form class="example-form" #userForm="ngForm">
+      <mat-form-field class="example-full-width">
+        <input matInput type="text" placeholder="Name" [(ngModel)]="name" name="name" required>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput type="text" placeholder="UserName" [(ngModel)]="username" name="username" required>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput type="email" placeholder="Email" [(ngModel)]="email" name="email" required>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput type="password" placeholder="Password" [(ngModel)]="password" name="password" required>
+      </mat-form-field>
+      <!-- <button mat-raised-button>Ok</button> -->
+      <button mat-raised-button color="primary" (click)="onRegister(userForm)"
+        [disabled]="!userForm.form.valid">Register</button>
+    </form>
+  </mat-card-content>
+</mat-card>

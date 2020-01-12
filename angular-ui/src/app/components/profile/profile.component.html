@@ -1,0 +1,14 @@
+<div *ngIf="user">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{user.name}}</mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <mat-list role="list">
+        <mat-list-item role="listitem">Username: {{user.username}}</mat-list-item>
+        <mat-list-item role="listitem">Email: {{user.email}}</mat-list-item>
+      </mat-list>
+    </mat-card-content>
+  </mat-card>
+</div>

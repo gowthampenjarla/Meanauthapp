@@ -1,0 +1,67 @@
+<mat-card class="example-card">
+  <div class="jumbotron text-center">
+    <h1 class="display-4">MEAN Authentication App</h1>
+    <p class="lead">
+      Welcome to the custom built MEAN authentication app from scratch
+    </p>
+    <button
+      mat-raised-button
+      class="m-3"
+      color="primary"
+      [routerLink]="['/login']"
+      routerLinkActive="router-link-active"
+    >
+      Login
+    </button>
+    <button
+      mat-raised-button
+      class="m-3"
+      [routerLink]="['/register']"
+      routerLinkActive="router-link-active"
+    >
+      Register
+    </button>
+  </div>
+</mat-card>
+
+<mat-grid-list cols="3" rowHeight="200px">
+  <mat-grid-tile>
+    <mat-card class="mr-2">
+      <mat-card-header>
+        <mat-card-title>Express Backend</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          Node.js/Express.js server using Monogoose to organize models and query
+          the database
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card class="mr-2">
+      <mat-card-header>
+        <mat-card-title>Angular-CLI</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          Angular CLI to generate components and services. Local dev server and
+          easy compilation
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card class="mr-2">
+      <mat-card-header>
+        <mat-card-title>JWT Tokens</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          Full featured authentication using JSON web tokens. Login, store and
+          validate user data
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
